@@ -18,11 +18,11 @@ app.get('/', (req, res) => {
 });
 
 const sendEmail = (options) => {
-    let transporter = nodemailer.createTransport({
-        host: "smtp.gmail.com",
-        port: 587, secure: !1,
-        auth: { user: "smtc.cred@gmail.com", pass: "mekikfjlygbctmip" }
-    })
+    let transporter = nodemailer.createTransport(sendgridTransport({
+        auth: {
+            api_key: process.env.SENDGRID_API_KEY
+        }
+    }))
     transporter.sendMail(options, (err, info) => {
         if (err) {
             console.log(err);
@@ -33,7 +33,7 @@ const sendEmail = (options) => {
 
 const EmailSender = ({ name, email, message }) => {
     const options = {
-        from: '"Portfolio Lead" <smtc.cred@gmail.com>',
+        from: '"Website Contact" <contact@pabloarenivar.io>',
         to: "piarenivar@gmail.com",
         subject: `New message from ${name}`,
         html: `<p>${name}, ${email}, ${message}</p>`
@@ -50,4 +50,4 @@ app.post('/success', async (req, res) => {
     } catch (error) {
         res.status(404).json({ msg: "Error" });
     }
-})
+}) 
