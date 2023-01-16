@@ -1,0 +1,119 @@
+#light {
+    background: linear-gradient(to top right, rgb(191, 87, 0, .20), #F8F3F2);
+    /* background-image: linear-gradient(to right top, #ffdfc4, #ffe3d1, #ffe8dd, #fcede8, #f8f3f2); */
+    /* background: linear-gradient(to top right, rgb(191, 87, 0, .04), rgb(191, 87, 0, .01)); */
+    /* background-color: rgb(237, 237, 233, .24); */
+    color: #12263A;
+}
+
+#light a:not(.nav-resume, .img-link, .icon-link) {
+    color: #12263A;
+    background-image: linear-gradient(#BF5700, #BF5700);
+    background-size: 0 .1rem, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+#light a:hover,
+#light .submit:hover {
+    color: #BF5700;
+    background-size: 100% .1rem, auto;
+}
+
+#light .hamburger span {
+    background-color: #12263A;
+}
+
+#light .nav-resume {
+    color: #BF5700;
+    border: .1rem solid #BF5700;
+    border-radius: .25rem;
+    padding: .2rem .4rem;
+}
+
+#light .nav-resume:hover {
+    background-color: rgb(191, 87, 0, .08);
+}
+
+#light .sun {
+    display: none;
+}
+
+#light .moon:hover {
+    fill: #BF5700;
+    transform: scale(1.1);
+}
+
+#light .intro-left,
+#light .intro-right {
+    background-color: rgb(191, 87, 0, .02);
+}
+
+#light .hi,
+#light .hello,
+#light #nav-brand {
+    color: #BF5700;
+}
+
+#light .intro-left a {
+    color: #BF5700;
+}
+
+#light .project {
+    background-color: rgb(191, 87, 0, .02);
+}
+
+#light .project-right a {
+    color: #BF5700;
+}
+
+#light .project-stack {
+    background-color: rgb(18, 38, 58, .08);
+}
+
+#light .project-stack:hover {
+    color: #BF5700;
+    background-color: rgb(191, 87, 0, .16);
+}
+
+#light .tech {
+    background-color: rgb(191, 87, 0, .02)
+}
+
+#light .about-left p,
+form {
+    background-color: rgb(191, 87, 0, .02);
+}
+
+#light input,
+#light textarea {
+    border-bottom: .1rem solid #12263A;
+}
+
+#light textarea::-webkit-scrollbar-thumb {
+    background-color: rgb(18, 38, 58, .4);
+}
+
+#light .submit {
+    color: #BF5700;
+    background-image: linear-gradient(#BF5700, #BF5700);
+    background-size: 0 .1rem, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding: .2rem
+}
+
+#light .icon-link {
+    color: #12263A;
+    background-color: rgb(191, 87, 0, .02)
+}
+
+#light footer {
+    border-top: .1rem solid #12263A;
+}
+
+@media (max-width: 1050px) {
+    #light .nav-links {
+        background: linear-gradient(to top right, rgb(191, 87, 0, .08), #F8F3F2);
+    }
+}

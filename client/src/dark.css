@@ -1,0 +1,137 @@
+#dark {
+    /* background-color: #161925; */
+    /* background-color: #373737; */
+    background-image: linear-gradient(to right top, #151515, #1d1d1d, #262626, #2e2e2e, #373737);
+    color: #F4EDEA;
+}
+
+#dark .hamburger span {
+    background-color: #F4D1AE;
+}
+
+#dark p {
+    color: #D8D5DB;
+}
+
+#dark a:not(.nav-resume, .img-link, .icon-link) {
+    color: #F4EDEA;
+    background-image: linear-gradient(#F4D1AE, #F4D1AE);
+    background-size: 0 .1rem, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+}
+
+#dark a:hover,
+#dark .submit:hover {
+    color: #F4D1AE;
+    background-size: 100% .1rem, auto;
+}
+
+#dark .nav-resume {
+    color: #F4D1AE;
+    border: .1rem solid #F4D1AE;
+    border-radius: .25rem;
+    padding:.2rem .4rem;
+}
+
+#dark .nav-resume:hover {
+    background-color: rgb(244, 209, 174, .16);
+}
+
+#dark .moon {
+    display: none;
+}
+
+#dark .sun:hover {
+    fill: #F4D1AE;
+    transform: scale(1.1);
+}
+
+#dark .intro-left,
+#dark .intro-right {
+    background-color: rgb(244, 209, 174, .06);
+}
+
+#dark .hi,
+#dark .hello,
+#dark #nav-brand {
+    color: #F4D1AE;
+}
+
+#dark .intro-left a,
+.email {
+    color: #F4D1AE;
+}
+
+#dark .project {
+    background-color: rgb(244, 209, 174, .06);
+}
+
+#dark .project-right a {
+    color: #F4D1AE;
+}
+
+#dark .project-stack {
+    background-color: rgb(244, 209, 174, .24);
+}
+
+#dark .project-stack:hover {
+    color: #F4D1AE;
+}
+
+#dark .tech {
+    background-color: rgb(244, 209, 174, .06)
+}
+
+#dark .about-left p,
+form {
+    background-color: rgb(244, 209, 174, .06)
+}
+
+#dark input,
+#dark textarea {
+    border-bottom: .1rem solid rgb(255, 255, 255, .48);
+}
+
+#dark textarea::-webkit-scrollbar-thumb {
+    background-color: rgb(244, 209, 174, .4);
+}
+
+#dark .submit {
+    color: #F4D1AE;
+    background-image: linear-gradient(#F4D1AE, #F4D1AE);
+    background-size: 0 .1rem, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding: .2rem;
+}
+
+#dark .icon-link {
+    color: inherit;
+}
+
+#dark footer {
+    border-top: .1rem solid rgb(255, 255, 255, .48);
+    color: #F4D1AE;
+}
+
+#dark #footerp,
+#dark #footera {
+    color: #F4D1AE;
+}
+
+#dark .toast {
+    background-color: rgb(0,255,0, .24);
+    color: inherit;
+    font-weight: inherit;
+}
+
+#dark .toast i {
+    color: inherit;
+}
+
+@media (max-width: 1050px) {
+    #dark .nav-links {
+        background-color: rgb(48, 48, 48, .8);
+    }
+}
