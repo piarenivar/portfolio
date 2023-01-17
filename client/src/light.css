@@ -112,6 +112,12 @@ form {
     border-top: .1rem solid #12263A;
 }
 
+#light input:-webkit-autofill,
+#light textarea:-webkit-autofill {
+    -webkit-text-fill-color: #12263A;
+    border-bottom: .1rem solid #12263A;
+}
+
 @media (max-width: 1050px) {
     #light .nav-links {
         background: linear-gradient(to top right, rgb(191, 87, 0, .08), #F8F3F2);

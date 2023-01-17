@@ -36,7 +36,12 @@ const EmailSender = ({ name, email, message }) => {
         from: '"Website Contact" <contact@pabloarenivar.io>',
         to: "piarenivar@gmail.com",
         subject: `New message from ${name}`,
-        html: `<p>${name}, ${email}, ${message}</p>`
+        html: `
+        <ul>
+            <li>${name}</li>
+            <li>${email}</li>
+            <li>${message}</li>
+        </ul>`
     };
 
     sendEmail(options)

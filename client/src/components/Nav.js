@@ -16,7 +16,7 @@ export default function Nav(props) {
                 <a onClick={openMenu} href="#stack" className="nav-link">Tech Stack</a>
                 <a onClick={openMenu} href="#about" className="nav-link">About</a>
                 <a onClick={openMenu} href="#contact" className="nav-link">Contact</a>
-                <a onClick={openMenu} href="#contact" className="nav-link nav-resume">Resume</a>
+                {/* <a onClick={openMenu} href="#contact" className="nav-link nav-resume">Resume</a> */}
             </div>
             <div className="rev">
                 <div onClick={openMenu} className={menu ? 'hamburger not-active' : 'hamburger active'}>
